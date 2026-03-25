@@ -1,0 +1,61 @@
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="학생 수 를 입력하시오."
+        android:layout_marginTop="20dp"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:ems="5"
+        android:hint="그럴껄"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ffAEBAFB"
+        android:text="발표 학생 뽑기"
+        android:textSize="30sp"
+        app:cornerRadius="0dp"
+        android:onClick="onInput"/>
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="100sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/o91" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/o92" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/o93" />
+    </FrameLayout>
