@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Android Test"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Aclass"
+        android:text="현직" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="A"
+            android:textColor="#FF0000"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1번 문제: 글꼴 변경" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radioButton16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="Setting > Editor > UI Tools"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="Setting > Editor > Code Templete"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="Setting > Editor > Fonts"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="Setting > Editor > Natural Langauge"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2번 문제: 이미지 업로드" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radioButton20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="MyApplication>app>src>main>res>drawable"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="MyApplication>app>src>main>res>values"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="MyApplication>app>src>main>res>xml"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="MyApplication>app>src>main>res>mipmap"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3번 문제: 미설치 SDK" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radioButton24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="Android SDK Build-Tools"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="Android SDK Platform-Tools"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="Google Play service"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="Google Play Licensing Library"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4번 문제: 문법" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radioButton28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="setContentView(R.layout.activity_main);"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="import android.widget.ImageView;"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="super.onCreate(saveInstanceState);"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="10dp"
+                        android:text="(검정)android:textColor=&quot;#ff000000&quot;"
+                        android:textSize="14sp" />
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="BCDEclass"
+                    android:text="확인" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="50dp"
+                    android:textColor="#ff0000"
+                    android:textSize="100sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>
